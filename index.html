@@ -1,0 +1,804 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medilife clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .navbar-brand {
+      padding-left: 200px;
+    }
+
+    .navbar-nav {
+      padding-right: 190px;
+      gap: 15px;
+    }
+
+    .navbar {
+      padding: 20px 20px;
+    }
+
+    #buton {
+      margin-left: -60%;
+    }
+
+    .d-block {
+      height: 100vh;
+    }
+
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: black;
+
+    }
+
+    .container1 {
+      border: 1px solid;
+      width: 45%;
+      margin-left: 15%;
+      padding: 40px 30px;
+      position: absolute;
+      margin-top: -3%;
+      background-color: rgb(0, 85, 213);
+
+    }
+    
+
+    .part1 {
+      display: flex;
+      gap: 15px;
+    }
+
+    .part2 {
+      display: flex;
+      gap: 50px;
+    }
+
+    .part3 {
+      display: flex;
+      gap: 20px;
+    }
+
+    .message {
+      width: 30%;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .container2 {
+      /* border: 1px solid; */
+      width: 15%;
+      margin-left: 60%;
+      margin-top: -3%;
+      position: absolute;
+      background-color: rgb(34, 192, 255);
+      padding-left: 20px;
+      padding-top: 10px;
+      height: 35.5%;
+    }
+
+    input {
+      background-color: rgba(255, 255, 255, 0);
+      color: wheat;
+    }
+
+    .containers {
+      display: flex;
+    }
+
+    @media(max-width:1500px) {
+      .containers {
+        display: inline-block;
+      }
+    }
+
+    .containerss {
+      /* border: 1px solid; */
+      margin-top: 15%;
+      height: 50vh;
+    }
+
+    .container3 {
+      /* border: 1px solid; */
+      width: 30%;
+      margin-left: 100px;
+      margin-top: 3%;
+      padding-left: 10px;
+    }
+
+    .container3>.part6 {
+      color: rgb(34, 192, 255);
+    }
+
+    .container3>.part4 {
+      font-weight: bold;
+      font-size: xx-large;
+    }
+
+    .container4 {
+      /* border: 1px solid; */
+      width: 20%;
+      margin-left: 40%;
+      margin-top: -13%;
+    }
+
+    .fa-solid,
+    #p1 {
+      display: flex;
+    }
+
+    #p1 {
+      font-weight: bold;
+    }
+
+    .part11 {
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .part11>i {
+      width: 10px;
+      color: rgb(163, 163, 163);
+    }
+
+    .part22 {
+      /* border: 1px solid; */
+      width: 20%;
+      margin-left: 65%;
+      margin-top: -8.5%;
+      display: flex;
+      gap: 10px;
+      font-weight: bold;
+      cursor: pointer;
+
+    }
+
+    .part22>i {
+      color: rgb(163, 163, 163);
+    }
+
+    .para2 {
+      /* border:1px solid; */
+      width: 20%;
+      margin-left: 65%;
+    }
+
+    .part33 {
+      /* border:  1px solid; */
+      display: flex;
+      gap: 10px;
+      margin-left: 40%;
+      width: 20%;
+      margin-top: -9%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .part33>i {
+      color: rgb(163, 163, 163);
+    }
+
+    .para3 {
+      /* border:1px solid; */
+      width: 20%;
+      margin-left: 40%;
+
+    }
+
+    .part44 {
+      /* border: 1px solid; */
+      display: flex;
+      gap: 10px;
+      margin-left: 65%;
+      width: 20%;
+      margin-top: -7%;
+      font-weight: bold;
+      cursor: pointer;
+
+    }
+
+    .part44>i {
+      color: rgb(163, 163, 163);
+    }
+
+    .para4 {
+      /* border: 1px solid; */
+      width: 20%;
+      margin-left: 65%;
+    }
+
+    .div1 {
+      /* border:1px solid; */
+      /* margin-left: 10%; */
+      width: 20%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .div1>i {
+      width: 20%;
+      size: 20%;
+      justify-content: center;
+      margin-left: 40%;
+    }
+
+    #d1p1 {
+      font-weight: bold;
+      font-size: larger;
+    }
+
+    #p4 {
+      font-weight: bold;
+      font-size: larger;
+      margin-top: 10%;
+    }
+
+    .container5 {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .img1>img {
+      width: 60%;
+    }
+
+    .img2>img {
+      width: 60%;
+      /* margin-left: 20%; */
+    }
+
+    .img3>img {
+      width: 60%;
+      /* margin-left: 40%;
+      margin-top: -; */
+    }
+
+    .img5>img {
+      width: 60%;
+      /* margin-left: 60%;
+      margin-top: -50%; */
+    }
+
+    .imgscrollor {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .div2{
+      /* border: 1px solid; */
+      width: 40%;
+      margin-left: 10%;
+      margin-top: 10%;
+    }
+    #d2p1{
+      font-weight: bold;
+      font-size: xx-large;
+    }
+    .d2img>img{
+      margin-left: 53%;
+      margin-top: -25%;
+    }
+    /* #card1{
+      margin-left : 10%;
+    } */
+    .container8{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .link-underline-secondar{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    #img{
+      margin-top: -2%;
+    }
+    .container9{
+      border: 1px solid;
+      width: 100%;
+      height: 90vh;
+      background-color:rgb(0, 85, 213);
+    }
+    .div3{
+      /* border:1px solid ; */
+      width: 40%;
+      margin-left: 5%;
+      margin-top: 5%;
+      text-align: center;
+      cursor: pointer;
+    }
+    .div3>p,span{
+      font-weight: bolder;
+      font-size: xx-large;
+    }
+    .div3>span{
+      color: white;
+    }
+    span{
+      color: white;
+    }
+    .div4{
+      /* border: 1px solid ; */
+      width: 20%;
+      margin-left: 50%  ;
+      margin-top: -20%;
+      cursor: pointer;
+    }
+    .div5{
+      /* border: 1px solid; */
+      margin-left: 70%;
+      width: 20%;
+      margin-top: -14.8%;
+      cursor: pointer;
+    }
+    .div6{
+      /* border: 1px solid ; */
+      width: 20%;
+      margin-left: 50%  ;
+      /* margin-top: -20%; */
+      cursor: pointer;
+    }
+    .div7{
+      /* border: 1px solid; */
+      margin-left: 70%;
+      width: 20%;
+      margin-top: -14.8%;
+      cursor: pointer;
+    }
+    #span1{
+      font-size: medium;
+    }
+    .footer {
+background-color: #032B44; /* Dark blue background */
+color: #fff;
+padding: 20px;
+text-align: center;
+clear: both;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer input[type="email"] {
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.footer button {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.footer button:hover {
+background-color: #3e8e41;
+}
+.navbar{
+  background-color:rgb(0, 85, 213);
+}
+.btnnn{
+  background-color: rgb(0, 85, 213);
+  border: none;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg   fixed-top ">
+    <div class="container-fluid ">
+      <a class="navbar-brand " href="#"><img src="img/logo.png (1).webp" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">News</a></li>
+
+              <li><a class="dropdown-item" href="#">Services</a></li>
+              <li><a class="dropdown-item" href="contact.html">About us</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light " href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+
+          <button id="buton" class="btn btn-outline-success bg-danger text-light border-danger" type="submit">For
+            Emergencies Click Here</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img src="img/slider1.webp" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block text-black $font-weight-bold: 900 ;">
+          <h5>Medical Services that
+            <br>
+            You can Trust 100%
+          </h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod.</p>
+          <button class="bg-info text-light border-info">Discover Medifile +</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider2.webp" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block text-black">
+          <h5>Medical Services that
+            <br>
+            You can Trust 100%
+          </h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod.</p>
+          <button class="bg-info text-light border-info">Discover Medifile +</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider3.webp" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block text-black">
+          <h5>Medical Services that
+            <br>
+            You can Trust 100%
+          </h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod.</p>
+          <button class="bg-info text-light border-info">Discover Medifile +</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br>
+  <div class="containers">
+    <div class="container1">
+      <div class="part1">
+        <div class="dropdown">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary-subtle dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Speciality1
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Speciality1</a></li>
+              <li><a class="dropdown-item" href="#">Speciality2</a></li>
+              <li><a class="dropdown-item" href="#">Speciality3</a></li>
+              <li><a class="dropdown-item" href="#">Speciality4</a></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary-subtle dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Doctor1
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">doctor1</a></li>
+              <li><a class="dropdown-item" href="#">doctor2</a></li>
+              <li><a class="dropdown-item" href="#">doctor3</a></li>
+              <li><a class="dropdown-item" href="#">doctor4</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="dt ">
+          <input class="text-black" type="text" placeholder="Date">
+          <input class="text-black" type="text" placeholder="Time">
+        </div>
+      </div>
+      <br>
+      <div class="part2">
+        <div class="input ">
+          <input class="text-black" type="text" placeholder="Name">
+          <input class="text-black" type="text" placeholder="Phone">
+          <input class="text-black" type="text" placeholder="E-mail">
+        </div>
+      </div>
+      <br>
+      <div class="part3">
+        <div class="message ">
+          <textarea class="btnnn " name="Message" id="" placeholder="Message"></textarea>
+        </div>
+        <div class="btnn ">
+          <button class=" ">Make an Appointment +</button>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="time">
+        <img src="img/alarm-clock.png.webp" alt="">
+        <p>Mon - Sat 08:00 - 21:00
+          <br>Sunday CLOSED
+        </p>
+      </div>
+      <div class="email">
+        <img src="img/envelope.png.webp" alt="">
+        <p>0080 673 729 766
+          <br>contact@business.com
+        </p>
+      </div>
+      <div class="location">
+        <img src="img/map-pin.png.webp" alt="">
+        <p>Lamas Str, no 14-18
+          <br>41770 Miami
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="containerss">
+    <div class="container3">
+      <div class="part4">
+        <p>We always put <br> our pacients first</p>
+      </div>
+      <div class="part5">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing eli.</p>
+      </div>
+      <div class="part6">
+        <button class="btnnn">View the Services +</button>
+      </div>
+    </div>
+    <div class="container4">
+      <div class="part11" href="#">
+        <i class="fa-solid fa-user-doctor"></i>
+        <p id="p1">The Best Doctors</p>
+      </div>
+      <div id="para1">
+        <P id="p2">Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+          ut.</P>
+      </div>
+    </div>
+    <div class="partt">
+      <div class="part22">
+        <i class="fa-solid fa-droplet"></i>
+        <p id="p3">Baby Nursery</p>
+      </div>
+      <div class="para2">Dolor sit amet, consecte tuer elit, sed diam nonummy nibh euismod tincidunt ut ldolore magna.
+      </div>
+    </div>
+  </div>
+  <div class="part33">
+    <i class="fa-solid fa-flask-vial"></i>
+    <p id="p3">Laboratory</p>
+  </div>
+  <div class="para3">Dolor sit amet, consecte tuer elit, sed diam nonummy nibh euismod tincidunt ut ldolore magna.</div>
+
+  <div class="part44">
+    <i class="fa-solid fa-truck-medical"></i>
+    <p id="p3">Emergency Room</p>
+  </div>
+  <div class="para4">Dolor sit amet, consecte tuer elit, sed diam nonummy nibh euismod tincidunt ut ldolore magna.</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="container5">
+    <div class="div1">
+      <i class="fa-solid fa-truck-droplet"></i>
+      <p id="p4">5632</p>
+      <p id="d1p1">Blood donations</p>
+      <p id="d1p2">Dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+    </div>
+    <div class="div1">
+      <i class="fa-solid fa-globe"></i>
+      <p id="p4">23k</p>
+      <p id="d1p1">Pacients</p>
+      <p id="d1p2">Dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+    </div>
+    <div class="div1">
+      <i class="fa-solid fa-microscope"></i>
+      <p id="p4">25</p>
+      <p id="d1p1">Specialities</p>
+      <p id="d1p2">Dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+    </div>
+    <div class="div1">
+      <i class="fa-solid fa-user-doctor"></i>
+      <p id="p4">723</p>
+      <p id="d1p1">Doctors</p>
+      <p id="d1p2">Dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+    </div>
+  </div>
+
+  <br>
+
+
+  <div class="container6">
+    <div class="imgscrollor">
+      <div class="img1">
+        <img src="img/g1.jpg" alt="">
+      </div>
+      <div class="img2">
+        <img src="img/g2.jpg" alt="">
+      </div>
+      <div class="img3">
+        <img src="img/g3.jpg" alt="">
+      </div>
+      <div class="img5">
+        <img src="img/g4.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+<br>
+  <br>
+  <div class="container7">
+    <div class="div2">
+      <div class="d2paras">
+        <p id="d2p1">A new way to treat <br> pacients in a <br> revolutionary facility</p>
+        <p id="d2p2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+          ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing eli.Lorem
+          ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer.</p>
+          <button class="btnnn">View the Services +</button>
+      </div>
+    </div>
+    <div class="div333">
+      <div class="d2img">
+        <img src="img/medical1.png.webp" alt="">
+      </div>
+    </div>
+
+  </div>
+
+<br>
+<div class="container8">
+  <div id="card1" class="card" style="width: 18rem;">
+    <img src="img/1.jpg.webp" class="card-img-top" alt="...">
+    <img id="img" src="img/p1.jpg.webp" width="60" alt="">
+    <div class="card-body">
+      <h5 class="card-title">New drog release soon</h5>
+      <p class="card-text">Dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+      <p href="#" class="link-underline-secondar" >3 Comments</p>
+      <a href="#" class="btn btn-primary">Jan 23,2018</a>
+    </div>
+  </div>
+  <div id="card2" class="card" style="width: 18rem;">
+    <img src="img/2.jpg.webp" class="card-img-top" alt="...">
+    <img id="img" src="img/p2.jpg.webp" width="60" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Free dental care</h5>
+      <p class="card-text">Dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+      <p href="#" class="link-underline-secondar" >3 Comments</p>
+      <a href="#" class="btn btn-primary">Jan 23,2018</a>
+    </div>
+  </div>
+  <div id="card3" class="card" style="width: 18rem;">
+    <img src="img/3.jpg.webp" class="card-img-top" alt="...">
+    <img id="img" src="img/p3.jpg.webp" width="60" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Good news for the pacients</h5>
+      <p class="card-text">Dolor sit amet, consecte tuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+      <p href="#" class="link-underline-secondar" >3 Comments</p>
+      <a href="#" class="btn btn-primary">Jan 23,2018</a>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+<div class="container9">
+  <div class="div3">
+  <img src="img/mobile.png" alt="">
+  <p>For Emergency calls.</p>
+  <p><span>+98-732-1654</span></p>
+</div>
+<div class="div4">
+  <p><span>London</span></p>
+  <p><span id="span1">132546978</span></p>
+  <p><span id="span1">Contact@bussiness.com</span></p>
+  <p><span id="span1">XYZ Plot 804</span></p>
+  <p><span id="span1">41770 Miami</span></p>
+</div>
+<div class="div5">
+  <p><span>New Castle</span> </p>
+  <p><span id="span1">132546978</span></p>
+  <p><span id="span1">Contact@bussiness.com</span></p>
+  <p><span id="span1">XYZ Plot 804</span></p>
+  <p><span id="span1">41770 Miami</span></p>
+</div>
+<div class="div6">
+  <p><span>Manchester</span></p>
+  <p><span id="span1">132546978</span></p>
+  <p><span id="span1">Contact@bussiness.com</span></p>
+  <p><span id="span1">XYZ Plot 804</span></p>
+  <p><span id="span1">41770 Miami</span></p>
+</div>
+<div class="div7">
+  <p><span >Bristol</span></p>
+  <p><span id="span1">132546978</span></p>
+  <p><span id="span1">Contact@bussiness.com</span></p>
+  <p><span id="span1">XYZ Plot 804</span></p>
+  <p><span id="span1">41770 Miami</span></p>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+  <p>Copyright 2023 <a href="#">Your Company</a>. All rights reserved.</p>
+  <form>
+  <input type="email" placeholder="Enter your email address">
+  <button>Subscribe</button>
+  </form>
+  </div>
+  </footer>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
